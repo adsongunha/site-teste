@@ -1,0 +1,43 @@
+:HTML:<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TE AMO SZ </title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>C*zinho hoje?</h1>
+  <button id="naoBtn">Não</button>
+  <button id="simBtn">Sim</button>
+  <button id="opcao1Btn">Opção 1</button>
+  <button id="opcao2Btn">Opção 2</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+JavaScript (script.js):const naoBtn = document.getElementById('naoBtn');
+const simBtn = document.getElementById('simBtn');
+const opcao1Btn = document.getElementById('opcao1Btn');
+const opcao2Btn = document.getElementById('opcao2Btn');
+
+naoBtn.addEventListener('click', () => {
+  const newX = Math.floor(Math.random() * window.innerWidth);
+  const newY = Math.floor(Math.random() * window.innerHeight);
+  naoBtn.style.position = 'absolute';
+  naoBtn.style.top = ${newY}px;
+  naoBtn.style.left = ${newX}px;
+});
+
+simBtn.addEventListener('click', () => {
+  alert('Marcado então, hoje às 22:00 na minha casa');
+});
+
+opcao1Btn.addEventListener('click', () => {
+  alert('Eu te amo Lohany ❤');
+});
+
+opcao2Btn.addEventListener('click', () => {
+  alert('Você me odeia? LOHANY SOARES DE ARAÚJO😡');
+});
